@@ -1,0 +1,42 @@
+[debug] [2020-06-06T22:37:28.000Z] ----------------------------------------------------------------------
+[debug] [2020-06-06T22:37:28.005Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\luisz\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js functions:shell
+[debug] [2020-06-06T22:37:28.006Z] CLI Version:   8.4.2
+[debug] [2020-06-06T22:37:28.006Z] Platform:      win32
+[debug] [2020-06-06T22:37:28.006Z] Node Version:  v12.16.1
+[debug] [2020-06-06T22:37:28.009Z] Time:          Sat Jun 06 2020 17:37:28 GMT-0500 (Colombia Standard Time)
+[debug] [2020-06-06T22:37:28.009Z] ----------------------------------------------------------------------
+[debug] [2020-06-06T22:37:28.010Z] 
+[debug] [2020-06-06T22:37:28.038Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-06-06T22:37:28.041Z] > authorizing via signed-in user
+[debug] [2020-06-06T22:37:28.042Z] [iam] checking project productos-2ad3e for permissions ["firebase.projects.get"]
+[debug] [2020-06-06T22:37:28.063Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-06-06T22:37:28.064Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-06-06T22:37:28.657Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 06 Jun 2020 22:37:31 GMT","server":"scaffolding on HTTPServer2","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-06-06T22:37:28.679Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/productos-2ad3e:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-06-06T22:37:29.381Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 06 Jun 2020 22:37:31 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=139","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[warn] !  Your requested "node" version "8" doesn't match your global version "12" {"metadata":{"emulator":{"name":"functions"},"message":"Your requested \"node\" version \"8\" doesn't match your global version \"12\""}}
+[debug] [2020-06-06T22:37:31.451Z] [functions] Watching "C:\Users\luisz\OneDrive\Documents\my-app\functions" for Cloud Functions...
+[debug] [2020-06-06T22:37:31.480Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-06-06T22:37:31.480Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-06-06T22:37:31.480Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2020-06-06T22:37:31.481Z] DEBUG: [worker-~diagnostic~-01c0483c-657c-4024-bcbc-de5909e26b20]: Assigning socketPath: \\?\pipe\C:\Users\luisz\OneDrive\Documents\my-app\functions\23172
+[debug] [2020-06-06T22:37:31.482Z] DEBUG: [worker-~diagnostic~-01c0483c-657c-4024-bcbc-de5909e26b20]: BUSY
+[debug] [2020-06-06T22:37:32.360Z] DEBUG: [runtime-status] [23172] Functions runtime initialized. {"cwd":"C:\\Users\\luisz\\OneDrive\\Documents\\my-app\\functions","node_version":"12.16.1"}
+[debug] [2020-06-06T22:37:32.363Z] DEBUG: [runtime-status] [23172] Disabled runtime features: undefined
+[debug] [2020-06-06T22:37:32.374Z] DEBUG: [runtime-status] [23172] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"C:\\Users\\luisz\\OneDrive\\Documents\\my-app\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-06-06T22:37:32.377Z] DEBUG: [runtime-status] [23172] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.2","resolution":"C:\\Users\\luisz\\OneDrive\\Documents\\my-app\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-06-06T22:37:32.381Z] DEBUG: [runtime-status] [23172] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2020-06-06T22:37:32.383Z] DEBUG: [runtime-status] [23172] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.2","resolution":"C:\\Users\\luisz\\OneDrive\\Documents\\my-app\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-06-06T22:37:32.472Z] DEBUG: [runtime-status] [23172] Checked functions.config() {"config":{}}
+[debug] [2020-06-06T22:37:32.472Z] DEBUG: [runtime-status] [23172] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.6.2","resolution":"C:\\Users\\luisz\\OneDrive\\Documents\\my-app\\functions\\node_modules\\firebase-functions\\lib\\index.js"}}
+[debug] [2020-06-06T22:37:32.474Z] DEBUG: [runtime-status] [23172] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.2","resolution":"C:\\Users\\luisz\\OneDrive\\Documents\\my-app\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-06-06T22:37:32.476Z] DEBUG: [runtime-status] [23172] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"C:\\Users\\luisz\\OneDrive\\Documents\\my-app\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-06-06T22:37:32.478Z] DEBUG: [runtime-status] [23172] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.2","resolution":"C:\\Users\\luisz\\OneDrive\\Documents\\my-app\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-06-06T22:37:32.478Z] DEBUG: [runtime-status] [23172] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.1","resolution":"C:\\Users\\luisz\\OneDrive\\Documents\\my-app\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2020-06-06T22:37:32.579Z] DEBUG: [runtime-status] [23172] initializeApp(DEFAULT) {"databaseURL":"https://productos-2ad3e.firebaseio.com","storageBucket":"productos-2ad3e.appspot.com","projectId":"productos-2ad3e"}
+[debug] [2020-06-06T22:37:32.590Z] [functions[sendEmailNotification]] function ignored because the firestore emulator does not exist or is not running.
+[info] i  functions: Loaded functions: sendEmailNotification 
+[warn] !  functions: The following emulators are not running, calls to these services will affect production: firestore, database, pubsub 
+[debug] [2020-06-06T22:37:32.637Z] DEBUG: [worker-~diagnostic~-01c0483c-657c-4024-bcbc-de5909e26b20]: IDLE
